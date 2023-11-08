@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #555555;
+    line-height: 1.6;
+}
+
+header{
+    text-align: center;
+    padding: 1rem 0;
+    /* background: #ffffff; */
+    color: #000000;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-item {
+    width: calc(33.333% - 1rem);
+    margin-bottom: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none; /* This removes the underline text from links */
+    color: #000; /* Set text color to black */
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .gallery-item {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
+footer {
+    width: 100%;
+    background-color: #f8f8f8; /* Transparent background */
+    padding: 15px 0; /* Add some padding */
+    position: fixed; /* Fixed at the bottom */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    gap: 25px; /* Space between icons */
+  }
+  
+  .footer-icons a {
+    text-decoration: none;
+    color: inherit; /* Take the color from the parent */
+    font-size: 1.5rem; /* Size of icons */
+  }
+  
+  .fa {
+    font-size: 50px; /* Size of icons */
+  }
+  
